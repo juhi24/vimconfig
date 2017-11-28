@@ -9,12 +9,15 @@ endif
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
+  " load pathogen
+  execute pathogen#infect()
   " Enable file type detection.
   " Use the default filetype settings, so that mail gets 'tw' set to 72,
   " 'cindent' is on in C files, etc.
   " Also load indent files, to automatically do language-dependent indenting.
   filetype plugin indent on
-
+  " enable syntax highlighting
+  syntax on
   " Insert shebang in new .sh files.
   autocmd BufNewFile *.sh 0put =\"#!/bin/bash\<nl>\"|$
 else
