@@ -32,6 +32,9 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
+" Hybrid line numbering
+set number relativenumber
+
 " Add optional packages.
 "
 " The matchit plugin makes the % command work better, but it is not backwards
