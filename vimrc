@@ -35,6 +35,15 @@ endif
 " Hybrid line numbering
 set number relativenumber
 
+" Highlight search
+set hlsearch
+
+" Disable arrow keys in normal mode
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
 " Add optional packages.
 "
 " The matchit plugin makes the % command work better, but it is not backwards
