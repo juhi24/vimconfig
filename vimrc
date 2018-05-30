@@ -44,6 +44,9 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
+" Set comment string for csv files
+:let g:csv_comment = '#'
+
 " Add optional packages.
 "
 " The matchit plugin makes the % command work better, but it is not backwards
