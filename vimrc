@@ -47,6 +47,21 @@ noremap <Right> <Nop>
 " Set comment string for csv files
 :let g:csv_comment = '#'
 
+" Show column in statusline with csv files
+function MySTL()
+  if has("statusline")
+    hi User1 term=standout ctermfg=0 ctermbg=11 guifg=Black guibg=Yellow
+    let stl = ...
+    if exists("*CSV_WCol")
+      let csv = '%1*%{&ft=~"csv" ? CSV_WCol() : ""}%*'
+    else
+      let csv = ''
+    endif
+      return stl.csv
+    endif
+endfunc
+set stl=%!MySTL()
+
 " Add optional packages.
 "
 " The matchit plugin makes the % command work better, but it is not backwards
