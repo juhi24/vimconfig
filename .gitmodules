@@ -1,3 +1,3 @@
 [submodule "pack/dist/start/csv"]
 	path = pack/dist/start/csv
-	url = git@github.com:chrisbra/csv.vim.git
+	url = https://github.com/chrisbra/csv.vim.git
