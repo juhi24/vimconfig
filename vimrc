@@ -14,6 +14,8 @@ if has("autocmd")
   " 'cindent' is on in C files, etc.
   " Also load indent files, to automatically do language-dependent indenting.
   filetype plugin indent on
+  set expandtab
+  set shiftwidth=2
   " enable syntax highlighting
   syntax on
   " Insert shebang in new .sh files.
